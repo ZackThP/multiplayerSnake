@@ -102,9 +102,9 @@ function handleGameOver(data) {
   gameActive = false;
 
   if (data.winner === playerNumber) {
-    alert('You Win!');
+    alert('Bạn Win rồi yay!');
   } else {
-    alert('You Lose :(');
+    alert('Bạn Thua rồi :(');
   }
 }
 
@@ -114,12 +114,12 @@ function handleGameCode(gameCode) {
 
 function handleUnknownCode() {
   reset();
-  alert('Unknown Game Code')
+  alert('Mã Game không xác định')
 }
 
 function handleTooManyPlayers() {
   reset();
-  alert('This game is already in progress');
+  alert('Game này đã được tiến hành');
 }
 
 function reset() {
